@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Membership.css">
+    <link rel="icon" type="image/x-icon" href="image/logoretuing.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Membership</title>
+</head>
+<body>
+    <nav>
+        <div class="">
+            <img src="image/logoretuing.png" alt="Logo">
+            <p>Retuing </p>
+        </div>
+        <ul>
+            <li>
+                <a href="Sidebar.html">Home</a>
+            </li>
+            <li>
+                <a href="AboutUTS.html">About</a>
+            </li>
+            <li>
+                <a href="NewsUTS.html">News</a>
+            </li>
+            <li>
+                <a href="PictureUTS.html">Picture</a>
+            </li>
+            <li>
+                <a href="ContactUTS.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i data-feather="arrow-down-left" id="btn"></i>
+        <i data-feather="arrow-down-left" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header>
+            Menu
+        </header>
+        <ul>
+            <li><a href="Profil.html">Profil Penulis</a></li>
+            <li><a href="Product.html">Product</a></li>
+            <li><a href="Membership.html">Membership</a></li>
+        </ul>
+    </div>
+
+    <div class="header">
+        <h1>OPEN MEMBERSHIP</h1>
+        <p>Ikuti Keseruan dan pengalaman menarik berkomunitas, mempelajari hal baru seputar Animasi dan Ilustrasi </p>
+      </div>
+
+    <div class="content">
+        <form action="/action_page.php">
+            <div class="container">
+              <h1>Daftar Membership</h1>
+              <p>Untuk menjadi membership, Isi Data diri di bawah ini.</p>
+              <hr>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" id="email" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+          
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+              <hr>
+              <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+          
+              <button type="submit" class="registerbtn">Register</button>
+            </div>
+            
+            <div class="container signin">
+              <p>Sudah menjadi membership? <a href="#">Sign in</a>.</p>
+            </div>
+          </form>
+    </div>
+
+    <div class="footer">
+        <p>
+            <a href="#">
+                www.retuing.com
+            </a> 
+        </p>
+        <p>
+            <i class="far besar fa-copyright"></i>
+            Sahrul setiawan (11210251000085)
+        </p>
+    </div>
+
+
+    <!-- wajib -->
+    <script>feather.replace()</script>
+    <!-- untuk memanggil file javascript -->
+    <script src="UTS.javascript"></script>
+
+</body>
+</html>

@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: rgb(255, 255, 255);
+}
+
+nav {
+    background-color: 40128B;
+    display: flex; 
+    justify-content: space-between;
+    padding: 0 1rem;
+
+} 
+
+nav ul {
+    align-items: center;
+    gap: 3rem;
+    display: flex;
+    list-style: none;
+}
+
+nav div {
+    display: flex;
+}
+
+nav div img {
+    width: 70px;
+    border-radius: 70px;
+    padding: 5px;
+    float: left;
+}
+
+nav div p {
+    font-family: outfit;
+    font-size: 30px;
+    font-weight: 700;
+    padding:10px;
+    padding-top: 15px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: outfit;
+    color: black;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid black;
+}
+
+.sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    font-family: outfit;
+    transition: all .5s ease;
+}
+
+.sidebar header {
+    font-family: outfit;
+    font-size: 22px;
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    line-height: 70px;
+    background-color: black;
+    user-select: none;
+    padding-left: 20px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    transition: .4s;
+
+}
+
+.sidebar ul li:hover a {
+    padding-left: 50px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+#check{
+    display: none;
+}
+
+label #btn, label #cancel {
+    position: absolute;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 10px;
+}
+
+label #btn {
+    left: 40px;
+    top: 100px;
+    font-size: 35px;
+    color: white;
+    transition: all .5s;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top : 100px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    transition: all .5s;
+}
+
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+ 
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+    left: 195px;
+
+}
+
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background-color: rgb(185, 185, 185);
+    color:rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: outfit;
+    margin-bottom: 50px;
+}
+
+.header h1 {
+    font-size: 40px;
+    padding: 5px;
+}
+
+.header h2 {
+    font-size: 30px;
+    padding: 10px 20px;
+}
+
+.header p {
+    font-size: 20px;
+    padding-bottom: 35px;
+}
+
+.content {
+    padding: 50px;
+    font-family: outfit;
+    text-align: justify;
+}
+
+.content-satu {
+    align-items: center;
+}
+
+.content-satu img {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px;
+}
+
+.content-satu p {
+    padding: 50px;
+}
+
+.content-satu ul {
+    padding: 0 200px;
+}
+
+.content-dua {
+    display: flex;
+    padding: 20px;
+    background-color: rgb(185, 185, 185);
+}
+
+.content-dua img {
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px;
+}
+
+.content-dua p {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+
+.footer-home {
+    padding: 60px;
+    text-align: center;
+    background-image: url(image/header3.jpeg);
+    background-size: cover;
+    color:rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: outfit;
+}
